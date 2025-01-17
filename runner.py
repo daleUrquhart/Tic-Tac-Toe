@@ -71,10 +71,11 @@ while True:
                 time.sleep(0.2)
                 user = game.O
                 AI = game.X
-        
+   
     else:
         game.AI = AI
         game.user = user
+
         # Draw game board
         tile_size = 80
         tile_origin = (width / 2 - (1.5 * tile_size),
@@ -100,6 +101,7 @@ while True:
 
         game_over = game.utility(board)
         player = game.player(board)
+
         # Show title
         if game_over != None:
             winner = game.winner(board)
@@ -145,7 +147,9 @@ while True:
                         if game.utility(board) != None:
                             game_over = True
                         player = AI
-        if game_over:
+        
+        # Handle game over
+        if game_over != None:
             againButton = pygame.Rect(width / 3, height - 65, width / 3, 50)
             again = mediumFont.render("Play Again", True, black)
             againRect = again.get_rect()

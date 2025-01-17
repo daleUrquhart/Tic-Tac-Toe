@@ -102,7 +102,7 @@ class Minimax:
             for j in board[i]:
                 search_board[i].append(j)
 
-        value = -Infinity
+        value = -inf
         best_move = None
         for action in self.actions(search_board):
             search_board[action[0]][action[1]] = self.AI
@@ -125,7 +125,7 @@ class Minimax:
             return score
 
         if AI_turn:
-            value = -Infinity
+            value = -inf
 
             for action in self.actions(board):
                 board[action[0]][action[1]] = self.AI
@@ -135,7 +135,7 @@ class Minimax:
             return value
 
         else:
-            value = Infinity
+            value = inf
 
             for action in self.actions(board): 
                 board[action[0]][action[1]] = self.user
@@ -144,4 +144,4 @@ class Minimax:
 
             return value
 
-from numpy import Infinity
+from numpy import inf
