@@ -16,7 +16,7 @@ white = (255, 255, 255)
 screen = pygame.display.set_mode(size)
 
 import os, sys
-ttf_path = os.path.join(sys.path[0], "OpenSans-Regular.ttf")
+ttf_path = os.path.join(sys.path[0], "media/OpenSans-Regular.ttf")
 
 mediumFont = pygame.font.Font(ttf_path, 28)
 largeFont = pygame.font.Font(ttf_path, 40)
