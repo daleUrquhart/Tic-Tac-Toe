@@ -1,6 +1,6 @@
 # Tic-Tac-Toe
 
-A continuation of learning from the tic-tac-toe game, following the course provided by HCS50 course
+A continuation of learning from the rock paper scissors game, following the course provided by HCS50 
 
 ---
 
